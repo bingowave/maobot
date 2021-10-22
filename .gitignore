@@ -1,0 +1,4 @@
+# Ignore all vs temp files
+/vs2019/.vs*
+/win32/Debug/*
+/win32/Release/*
