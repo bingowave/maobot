@@ -1,3 +1,6 @@
 [submodule "submodule/DPP"]
 	path = submodule/DPP
 	url = https://github.com/brainboxdotcc/DPP
+[submodule "submodule/windows-bot-template"]
+	path = submodule/windows-bot-template
+	url = https://github.com/brainboxdotcc/windows-bot-template/

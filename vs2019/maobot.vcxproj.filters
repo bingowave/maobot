@@ -13,10 +13,60 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Runtime">
+      <UniqueIdentifier>{b6c4bb08-2a43-43f9-9045-344be591c6a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\32">
+      <UniqueIdentifier>{1eed31fb-ca77-4b24-83d2-4f8d2a3043b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\32\debug">
+      <UniqueIdentifier>{8aecfa52-4175-40b0-bd46-0f25bf8dec3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\32\release">
+      <UniqueIdentifier>{b6127444-62ca-499f-86ac-b5e16979a7f4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\maobot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\dpp.dll">
+      <Filter>Runtime\32\debug</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\libcrypto-1_1.dll">
+      <Filter>Runtime\32\debug</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\libsodium.dll">
+      <Filter>Runtime\32\debug</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\libssl-1_1.dll">
+      <Filter>Runtime\32\debug</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\opus.dll">
+      <Filter>Runtime\32\debug</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\zlib1.dll">
+      <Filter>Runtime\32\debug</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\dpp.dll">
+      <Filter>Runtime\32\release</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\libcrypto-1_1.dll">
+      <Filter>Runtime\32\release</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\libsodium.dll">
+      <Filter>Runtime\32\release</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\libssl-1_1.dll">
+      <Filter>Runtime\32\release</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\opus.dll">
+      <Filter>Runtime\32\release</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\zlib1.dll">
+      <Filter>Runtime\32\release</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>

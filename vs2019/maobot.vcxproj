@@ -21,6 +21,102 @@
   <ItemGroup>
     <ClCompile Include="..\src\maobot.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\dpp.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DeploymentContent>
+      <FileType>Document</FileType>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)%(Extension)</DestinationFileName>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)</DestinationFolders>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy dpp.dll $(outdir)</Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy dpp.dll $(outdir)</Outputs>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\libcrypto-1_1.dll">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\libsodium.dll">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\libssl-1_1.dll">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\opus.dll">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\debug\bin\zlib1.dll">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\dpp.dll">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\libcrypto-1_1.dll">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\libsodium.dll">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\libssl-1_1.dll">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\opus.dll">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\submodule\windows-bot-template\MyBot\dependencies\32\release\bin\zlib1.dll">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DestinationFileName>
+    </CopyFileToFolders>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -75,11 +171,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)..\win32\debug</OutDir>
+    <OutDir>$(SolutionDir)..\win32\debug\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)..\win32\release</OutDir>
+    <OutDir>$(SolutionDir)..\win32\release\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
