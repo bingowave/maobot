@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="maobot.cpp">
+    <ClCompile Include="..\src\maobot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
