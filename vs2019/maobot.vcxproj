@@ -174,12 +174,14 @@
     <OutDir>$(SolutionDir)..\win32\debug\</OutDir>
     <IncludePath>$(SolutionDir)..\submodule\windows-bot-template\MyBot\dependencies\include\dpp-9.0\;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\submodule\windows-bot-template\MyBot\dependencies\32\debug\lib\dpp-9.0;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)\.temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)..\win32\release\</OutDir>
     <IncludePath>$(SolutionDir)..\submodule\windows-bot-template\MyBot\dependencies\include\dpp-9.0\;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\submodule\windows-bot-template\MyBot\dependencies\32\release\lib\dpp-9.0;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)\.temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -211,12 +213,14 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/wd4251 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
